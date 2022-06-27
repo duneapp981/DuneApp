@@ -1,5 +1,6 @@
 import 'package:dune/Pages/HomePage/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
@@ -165,7 +166,6 @@ class _EditPageState extends State<EditPage> {
                     children: [
                       Expanded(
                         child: TextFormField(
-                          
                           initialValue:
                               a.specificVehicle!.data.loadCapacity.toString(),
                           keyboardType: TextInputType.number,
@@ -410,6 +410,10 @@ class _EditPageState extends State<EditPage> {
                       driverNumber.text = value;
                     },
                     maxLength: 10,
+                    keyboardType: TextInputType.number,
+                    inputFormatters: <TextInputFormatter>[
+                      FilteringTextInputFormatter.digitsOnly
+                    ],
                     decoration: InputDecoration(
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText:

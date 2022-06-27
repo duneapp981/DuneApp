@@ -1,5 +1,6 @@
 import 'package:dune/Pages/HomePage/homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
@@ -469,7 +470,6 @@ class _LoadVehicleState extends State<LoadVehicle> {
                     autofocus: false,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      
                       hintText: AppLocalizations.of(context)!.ask_price,
                       labelText: AppLocalizations.of(context)!.ask_price,
                       hintStyle: const TextStyle(color: Colors.grey),
@@ -500,7 +500,6 @@ class _LoadVehicleState extends State<LoadVehicle> {
                       ..text = a.specificVehicle!.data.driverName,
                     autofocus: false,
                     decoration: InputDecoration(
-
                       hintText:
                           AppLocalizations.of(context)!.enter_drivers_name,
                       labelText:
@@ -529,6 +528,10 @@ class _LoadVehicleState extends State<LoadVehicle> {
                     onChanged: (value) {
                       driverNumber.text = value;
                     },
+                    keyboardType: TextInputType.number,
+                    inputFormatters: <TextInputFormatter>[
+                      FilteringTextInputFormatter.digitsOnly
+                    ],
                     decoration: InputDecoration(
                       hintStyle: const TextStyle(color: Colors.grey),
                       hintText:

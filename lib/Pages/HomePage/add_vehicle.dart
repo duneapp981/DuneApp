@@ -2,6 +2,7 @@ import 'package:dune/Pages/HomePage/homepage.dart';
 import 'package:dune/Services/essentials.dart';
 import 'package:dune/config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
@@ -161,7 +162,6 @@ class _AddVehicleState extends State<AddVehicle> {
               controller: vehicleNumber,
               autofocus: false,
               decoration: InputDecoration(
-                
                 hintText: AppLocalizations.of(context)!.vehicle_number,
                 labelText: AppLocalizations.of(context)!.vehicle_number,
                 fillColor: Colors.white,
@@ -436,6 +436,9 @@ class _AddVehicleState extends State<AddVehicle> {
               autofocus: false,
               maxLength: 10,
               keyboardType: TextInputType.number,
+              inputFormatters: <TextInputFormatter>[
+                FilteringTextInputFormatter.digitsOnly
+              ],
               decoration: InputDecoration(
                 hintStyle: const TextStyle(color: Colors.grey),
                 hintText: AppLocalizations.of(context)!.enter_drivers_number,
