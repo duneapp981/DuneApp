@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9d1067b8340bcabc49a94a7429b8e765/jetified-play-services-auth-19.2.0/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9d1067b8340bcabc49a94a7429b8e765/jetified-play-services-auth-19.2.0/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9d1067b8340bcabc49a94a7429b8e765/jetified-play-services-auth-19.2.0/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

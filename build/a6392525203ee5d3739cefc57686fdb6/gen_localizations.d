@@ -1,1 +1,0 @@
- /home/hits/Desktop/dune/.dart_tool/flutter_gen/gen_l10n/app_localizations_en.dart /home/hits/Desktop/dune/.dart_tool/flutter_gen/gen_l10n/app_localizations_hi.dart /home/hits/Desktop/dune/.dart_tool/flutter_gen/gen_l10n/app_localizations.dart:  /home/hits/Desktop/dune/l10n.yaml /home/hits/Desktop/dune/lib/l10n/app_en.arb /home/hits/Desktop/dune/lib/l10n/app_hi.arb

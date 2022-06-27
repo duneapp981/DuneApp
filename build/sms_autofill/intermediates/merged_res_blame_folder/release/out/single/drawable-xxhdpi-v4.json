@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9e8d27557fb2d15a60cae1b3e2d1f2a1/jetified-play-services-base-17.5.0/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9e8d27557fb2d15a60cae1b3e2d1f2a1/jetified-play-services-base-17.5.0/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9e8d27557fb2d15a60cae1b3e2d1f2a1/jetified-play-services-base-17.5.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9e8d27557fb2d15a60cae1b3e2d1f2a1/jetified-play-services-base-17.5.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-xxhdpi-v4/googleg_disabled_color_18.png",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9e8d27557fb2d15a60cae1b3e2d1f2a1/jetified-play-services-base-17.5.0/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/hits/Desktop/DuneApp/build/sms_autofill/intermediates/res/merged/release/drawable-xxhdpi-v4/googleg_standard_color_18.png",
+        "source": "/home/hits/.gradle/caches/transforms-2/files-2.1/9e8d27557fb2d15a60cae1b3e2d1f2a1/jetified-play-services-base-17.5.0/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
+    }
+]

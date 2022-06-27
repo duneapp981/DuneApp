@@ -1,11 +1,18 @@
+import 'package:dune/Pages/Auth/login_as_page.dart';
 import 'package:dune/Provider/main_provider.dart';
+import 'package:dune/prefs/shared_prefs.dart';
 import 'package:dune/route_gen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main() {
+import 'Pages/SplashScreen/splash.dart';
+import 'Pages/HomePage/homepage.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -21,15 +28,25 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
 
-  void setLocale(Locale value) {
+  void setLocale(Locale value) async {
     setState(() {
       _locale = value;
     });
-  } 
+  }
 
-  // this is used to change the language of the app 
-  // MyApp.of(context)
-  //                         .setLocale(const Locale.fromSubtags(languageCode: 'hi'));
+  void setAccessToken() async {
+    String lang = await SharedPrefs.getData("lang");
+    Locale forcedLocale = lang.isNotEmpty ? Locale(lang) : const Locale("hi");
+    setState(() {
+      _locale = forcedLocale;
+    });
+  }
+
+  @override
+  void initState() {
+    setAccessToken();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +57,7 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
         title: 'Dune',
         initialRoute: '/',
+        home: LoginAsPage(),
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         locale: _locale,
