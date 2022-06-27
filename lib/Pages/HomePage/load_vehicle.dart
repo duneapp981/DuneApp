@@ -193,6 +193,7 @@ class _LoadVehicleState extends State<LoadVehicle> {
                         child: TextFormField(
                           initialValue: enterQuantity.toString(),
                           decoration: const InputDecoration(
+                            hintStyle: const TextStyle(color: Colors.grey),
                             enabled: false,
                             border: InputBorder.none,
                             contentPadding: EdgeInsets.all(15),
@@ -468,8 +469,10 @@ class _LoadVehicleState extends State<LoadVehicle> {
                     autofocus: false,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
+                      
                       hintText: AppLocalizations.of(context)!.ask_price,
                       labelText: AppLocalizations.of(context)!.ask_price,
+                      hintStyle: const TextStyle(color: Colors.grey),
                       fillColor: Colors.white,
                       filled: true,
                       contentPadding:
@@ -497,6 +500,7 @@ class _LoadVehicleState extends State<LoadVehicle> {
                       ..text = a.specificVehicle!.data.driverName,
                     autofocus: false,
                     decoration: InputDecoration(
+
                       hintText:
                           AppLocalizations.of(context)!.enter_drivers_name,
                       labelText:
@@ -526,6 +530,7 @@ class _LoadVehicleState extends State<LoadVehicle> {
                       driverNumber.text = value;
                     },
                     decoration: InputDecoration(
+                      hintStyle: const TextStyle(color: Colors.grey),
                       hintText:
                           AppLocalizations.of(context)!.enter_drivers_number,
                       labelText:

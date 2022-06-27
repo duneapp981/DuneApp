@@ -161,6 +161,7 @@ class _AddVehicleState extends State<AddVehicle> {
               controller: vehicleNumber,
               autofocus: false,
               decoration: InputDecoration(
+                
                 hintText: AppLocalizations.of(context)!.vehicle_number,
                 labelText: AppLocalizations.of(context)!.vehicle_number,
                 fillColor: Colors.white,
@@ -218,6 +219,7 @@ class _AddVehicleState extends State<AddVehicle> {
                     keyboardType: TextInputType.number,
                     autofocus: false,
                     decoration: InputDecoration(
+                      hintStyle: const TextStyle(color: Colors.grey),
                       hintText: AppLocalizations.of(context)!.load_capacity,
                       labelText: AppLocalizations.of(context)!.load_capacity,
                       fillColor: Colors.white,
@@ -411,6 +413,7 @@ class _AddVehicleState extends State<AddVehicle> {
               maxLength: 10,
               autofocus: false,
               decoration: InputDecoration(
+                hintStyle: const TextStyle(color: Colors.grey),
                 hintText: AppLocalizations.of(context)!.enter_drivers_name,
                 labelText: AppLocalizations.of(context)!.enter_drivers_name,
                 fillColor: Colors.white,
@@ -434,6 +437,7 @@ class _AddVehicleState extends State<AddVehicle> {
               maxLength: 10,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
+                hintStyle: const TextStyle(color: Colors.grey),
                 hintText: AppLocalizations.of(context)!.enter_drivers_number,
                 labelText: AppLocalizations.of(context)!.enter_drivers_number,
                 fillColor: Colors.white,

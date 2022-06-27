@@ -109,6 +109,7 @@ class _EditPageState extends State<EditPage> {
                     },
                     autofocus: false,
                     decoration: InputDecoration(
+                      hintStyle: const TextStyle(color: Colors.grey),
                       labelText: AppLocalizations.of(context)!.vehicle_number,
                       hintText: AppLocalizations.of(context)!.vehicle_number,
                       fillColor: Colors.white,
@@ -164,6 +165,7 @@ class _EditPageState extends State<EditPage> {
                     children: [
                       Expanded(
                         child: TextFormField(
+                          
                           initialValue:
                               a.specificVehicle!.data.loadCapacity.toString(),
                           keyboardType: TextInputType.number,
@@ -174,6 +176,7 @@ class _EditPageState extends State<EditPage> {
                             });
                           },
                           decoration: InputDecoration(
+                            hintStyle: const TextStyle(color: Colors.grey),
                             hintText:
                                 AppLocalizations.of(context)!.load_capacity,
                             labelText:
@@ -194,7 +197,7 @@ class _EditPageState extends State<EditPage> {
                         width: 15,
                       ),
                       SizedBox(
-                        width: Dimension.scalePixel(40),
+                        width: Dimension.scalePixel(45),
                         child: DropdownButtonFormField(
                           hint: Row(
                             children: [
@@ -379,6 +382,7 @@ class _EditPageState extends State<EditPage> {
                     },
                     autofocus: false,
                     decoration: InputDecoration(
+                      hintStyle: const TextStyle(color: Colors.grey),
                       hintText:
                           AppLocalizations.of(context)!.enter_drivers_name,
                       labelText:
@@ -407,6 +411,7 @@ class _EditPageState extends State<EditPage> {
                     },
                     maxLength: 10,
                     decoration: InputDecoration(
+                      hintStyle: const TextStyle(color: Colors.grey),
                       hintText:
                           AppLocalizations.of(context)!.enter_drivers_number,
                       labelText:

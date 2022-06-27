@@ -57,7 +57,6 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
         title: 'Dune',
         initialRoute: '/',
-        home: LoginAsPage(),
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         locale: _locale,
